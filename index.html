@@ -11,7 +11,7 @@
     var dom = document.getElementById("T");
     setInterval(function(){
       fontsize+=t;
-      dom.style.fontSize = fontsize;
+      dom.style.fontSize = fontsize +"px";
       t = (fontsize>100)? t=!t:t;
       t = (fontsize<5)? t=!t:t;
     },30);
