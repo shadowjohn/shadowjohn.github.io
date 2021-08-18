@@ -2,27 +2,33 @@
 <html>
 <head>
   <style>
-    .c{
-      margin-left:auto;
-      margin-right:auto;
-      margin-top:50%;      
+	html,body{
+		padding:0px;
+		margin:0px;		
+		height:100vh;		
+		width:100%;
+		overflow:hidden;
+	}
+    .c{      
+	  text-align:center;      
+	  height:100vh;
+	  line-height:100vh;	  	  
     }
   </style>
 </head>
 <body>
   <div class="c">
-<span id="T">肥</span>
+	<span id="T">肥</span>
   </div>
 </body>
   <script>
-    var t = 1;
+    var t = 10;
     var fontsize=5;
     var dom = document.getElementById("T");
     setInterval(function(){
       fontsize+=t;
       dom.style.fontSize = fontsize +"px";
-      t = (fontsize>100)? t*=-1:t;
-      t = (fontsize<5)? t*=-1:t;
-    },15);
+      t = (fontsize>500 || fontsize<5)? t*=-1:t;      
+    },5);
   </script>
 </html>
