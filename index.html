@@ -3,6 +3,17 @@
 <head>
 </head>
 <body>
-<h1>你好</h1>
+<span id="T">你好</span>
 </body>
+  <script>
+    var t = 1;
+    var fontsize=5;
+    var dom = document.getElementById("T");
+    setInterval(function(){
+      fontsize+=t;
+      dom.style.fontSize = fontsize;
+      t = (fontsize>100)? t=!t:t;
+      t = (fontsize<5)? t=!t:t;
+    },30);
+  </script>
 </html>
