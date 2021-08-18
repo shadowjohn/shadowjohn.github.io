@@ -12,8 +12,8 @@
     setInterval(function(){
       fontsize+=t;
       dom.style.fontSize = fontsize +"px";
-      t = (fontsize>100)? t=!t:t;
-      t = (fontsize<5)? t=!t:t;
+      t = (fontsize>100)? t*=-1:t;
+      t = (fontsize<5)? t*=-1:t;
     },30);
   </script>
 </html>
