@@ -1,9 +1,18 @@
 <!doctype html>
 <html>
 <head>
+  <style>
+    .c{
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:50%;      
+    }
+  </style>
 </head>
 <body>
-<span id="T">你好</span>
+  <div class="c">
+<span id="T">肥</span>
+  </div>
 </body>
   <script>
     var t = 1;
@@ -14,6 +23,6 @@
       dom.style.fontSize = fontsize +"px";
       t = (fontsize>100)? t*=-1:t;
       t = (fontsize<5)? t*=-1:t;
-    },30);
+    },15);
   </script>
 </html>
